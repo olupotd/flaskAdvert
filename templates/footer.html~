@@ -1,0 +1,18 @@
+<hr class="soften"/>
+<footer class="footer">
+<p>
+	<span class="pull-right">
+	<a class="btn btn-primary" href="#">t</a> 
+	<a class="btn btn-danger" href="#">g+</a> 
+	<a class="btn btn-primary" href="#">f</a> 
+	</span>
+<a href="index.html">Home</a> - 
+<a href="about_us.html">Who we are?</a> - 
+<a href="webdevelopment.html">What we do?</a> - 
+<a href="portfolio.html">What we did?</a> -
+<a href="contact.html">Support</a>
+</p>
+<hr class="soften"/>
+<p>&copy; Copyright company <br/><br/></p>
+ </footer>
+</div>

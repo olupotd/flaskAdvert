@@ -1,0 +1,247 @@
+{% extends "header.html" %}
+{% block body %}
+ {% if session.logged_in %}
+
+ <div class="container">
+<div class="well" > {% if error %}<p class='error' ><strong><font color="red">Error:</font></strong> {{ error }}{% endif %}
+ 
+ </div>
+<div class="row">
+	<div class="span6">
+	<div class="well well-small">
+		<h3> Welcome !</h3>	
+		<p>
+		We are specialized in Software development in C/C++ and Python web and application design, development and for different devices such as Desktop, Mobiles and Tablets. 
+		
+		This is the most popular and beneficial for everyone.<br/><br/> Moreover, If you are looking for upgrade your website or even if you do not have any website, 
+		then just remember us we make your dream success. 
+		visit our contact page and get yourself the best service<br/> 
+		</p>
+	</div>
+	</div>
+	<div class="span6">
+	<div class="well well-small">
+		<h3> News and Events</h3>
+		<h5>Our aim is simple</h5>	
+		<p>
+		"To provide affordable System and application development services for different devices is out main goal."
+		</p>
+		<strong> Web Apps:</strong>	
+		<p>
+		It's very simple as eating food you love. just get in touch with us and we'll get you up and online in just a matter of time.
+		
+		
+		</p>
+		
+	</div>
+	</div>
+	
+	<div class="span12">
+	<div class="well well-small">
+		<em>
+		" You have to try this out. These guys are the best in the field. i mean there are others but you definately don't want to miss these ones out. "  
+		<strong>TRUST ME!</strong>
+		
+		</em>
+
+	</div>
+	</div>
+</div>
+
+
+
+
+<div class="row">
+	<div class="span4">
+	<div class="thumbnail">
+	<h3 style="text-align:center"> Website/App Design</h3>	
+	<div class="caption">
+	<h5> Web Based Applications</h5>	
+	<p>
+We are helping you to design you a professional website or web app.Converting PSD to XHTML & CSS. Even more in Graphic Design such as Coverpage, Logo etc. 
+	</p>
+	<a class="pull-right" href="#">view details</a>
+	<br/>
+	</div>
+	</div>
+	</div>
+	<div class="span4">
+	<div class="thumbnail">
+	<h3 style="text-align:center">Software Development</h3>	
+	<div class="caption">
+	<h5> For any online activities</h5>	
+	<p>
+	
+If you are looking for upgrade your website for mobiles and tablets, Even if you do not have any website, then just remember us and makes your dream success. 
+	</p>
+	<a class="pull-right" href="#">view details</a>
+	<br/>
+	</div>
+	</div>
+	</div>
+	<div class="span4">
+	<div class="thumbnail">
+	<h3 style="text-align:center">Software Testing</h3>	
+	<div class="caption">
+	<h5>Drive your business in the fast track</h5>	
+	<p>
+	
+Search Engine Optimization is very important for your website. we are the best one in it including layout or themes implementation for your website.
+	</p>
+	<a class="pull-right" href="#">view details</a>
+	<br/>
+	</div>
+	</div>
+	</div>
+</div>
+<hr/>
+
+<hr class="soften"/>
+<footer class="footer">
+<p>
+	<span class="">
+	<a href="facebook.com/pyconadmins"><img src="{{ url_for('static', filename='img/facebook.png') }}" alt="" ></a> 
+	<a href="#"><img src="{{ url_for('static', filename='img/googleplus.png') }}" alt="" ></a> 
+	<a href="#"><img src="{{ url_for('static', filename='img/twitter.png') }}" alt="" ></a> 
+	<a href="#"><img src="{{ url_for('static', filename='img/rss.png') }}" alt="" ></a> 
+	</span>
+<a href="index.html">Home</a> - 
+<a href="about_us.html">Who we are?</a> - 
+<a href="webdevelopment.html">What we do?</a> - 
+<a href="portfolio.html">What we did?</a> -
+<a href="contact.html">Support</a>
+</p>
+<hr class="soften"/>
+<p>&copy; Copyright &copy Picon <br/><br/></p>
+ </footer>
+</div>
+</div>
+</body>
+
+ 
+ 
+ {% endif %}
+ {% if not session.logged_in %}
+  
+<div class="container">
+
+<div class="row">
+	<div class="span6">
+	<div class="well well-small">
+		<h3> Welcome !</h3>	
+		<p>
+		We are specialized in Software development in C/C++ and Python web and application design, development and for different devices such as Desktop, Mobiles and Tablets. 
+		
+		This is the most popular and beneficial for everyone.<br/><br/> Moreover, If you are looking for upgrade your website or even if you do not have any website, 
+		then just remember us we make your dream success. 
+		visit our contact page and get yourself the best service<br/> 
+		</p>
+	</div>
+	</div>
+	<div class="span6">
+	<div class="well well-small">
+		<h3> News and Events</h3>
+		<h5>Our aim is simple</h5>	
+		<p>
+		"To provide affordable System and application development services for different devices is out main goal."
+		</p>
+		<strong> Web Apps:</strong>	
+		<p>
+		It's very simple as eating food you love. just get in touch with us and we'll get you up and online in just a matter of time.
+		
+		
+		</p>
+		
+	</div>
+	</div>
+	
+	<div class="span12">
+	<div class="well well-small">
+		<em>
+		" You have to try this out. These guys are the best in the field. i mean there are others but you definately don't want to miss these ones out. "  
+		<strong>TRUST ME!</strong>
+		
+		</em>
+
+	</div>
+	</div>
+</div>
+
+
+
+
+<div class="row">
+	<div class="span4">
+	<div class="thumbnail">
+	<h3 style="text-align:center"> Website/App Design</h3>	
+	<div class="caption">
+	<h5> Web Based Applications</h5>	
+	<p>
+We are helping you to design you a professional website or web app.Converting PSD to XHTML & CSS. Even more in Graphic Design such as Coverpage, Logo etc. 
+	</p>
+	<a class="pull-right" href="#">view details</a>
+	<br/>
+	</div>
+	</div>
+	</div>
+	<div class="span4">
+	<div class="thumbnail">
+	<h3 style="text-align:center">Software Development</h3>	
+	<div class="caption">
+	<h5> For any online activities</h5>	
+	<p>
+	
+If you are looking for upgrade your website for mobiles and tablets, Even if you do not have any website, then just remember us and makes your dream success. 
+	</p>
+	<a class="pull-right" href="#">view details</a>
+	<br/>
+	</div>
+	</div>
+	</div>
+	<div class="span4">
+	<div class="thumbnail">
+	<h3 style="text-align:center">Software Testing</h3>	
+	<div class="caption">
+	<h5>Drive your business in the fast track</h5>	
+	<p>
+	
+Search Engine Optimization is very important for your website. we are the best one in it including layout or themes implementation for your website.
+	</p>
+	<a class="pull-right" href="#">view details</a>
+	<br/>
+	</div>
+	</div>
+	</div>
+</div>
+<hr/>
+
+<hr class="soften"/>
+<footer class="footer">
+<p>
+	<span class="">
+	<a href="facebook.com/pyconadmins"><img src="{{ url_for('static', filename='img/facebook.png') }}" alt="" ></a> 
+	<a href="#"><img src="{{ url_for('static', filename='img/googleplus.png') }}" alt="" ></a> 
+	<a href="#"><img src="{{ url_for('static', filename='img/twitter.png') }}" alt="" ></a> 
+	<a href="#"><img src="{{ url_for('static', filename='img/rss.png') }}" alt="" ></a> 
+	</span>
+<a href="index.html">Home</a> - 
+<a href="about_us.html">Who we are?</a> - 
+<a href="webdevelopment.html">What we do?</a> - 
+<a href="portfolio.html">What we did?</a> -
+<a href="contact.html">Support</a>
+</p>
+<hr class="soften"/>
+<p>&copy; Copyright company <br/><br/></p>
+ </footer>
+</div>
+</div>
+</body>
+
+ {% endif %}
+
+<script type="" src="{{ url_for('static', filename='js/bootstrap.js') }}" ></script>
+<script type="" src="{{ url_for('static', filename='js/bootstrap.min.js') }}" ></script>
+<script type="" src="{{ url_for('static', filename='js/jquery.js') }}" ></script>
+<script type="" src="{{ url_for('static', filename='js/jquery-1.8.3.min.js') }}" ></script>
+{% endblock %}
+

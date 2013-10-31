@@ -1,0 +1,57 @@
+<Html>
+<head>
+<meta charset="utf-8">
+    <title>Welcome to my blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+<link rel="shortcut icon" href="{{ url_for('static', filename='') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-responsive.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-responsive.min.css') }}">
+</head>
+
+<body>
+
+<div class="navbar navbar-fixed-top " >
+ 	<div class="navbar-inner thumbnail">
+	<div class="container">
+	<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+		<img src="{{ url_for('static', filename='img/logo.png') }}" alt='Logo'></a>			
+		<a href="#" class="brand">
+		<img src="{{ url_for('static', filename='img/logi.png') }}" alt='Logo' width="35" height="25"></img></a>
+	<div class="nav-collapse collapse">
+		<ul class="nav pull-right">
+			<li class="">
+			<a href="index">Home</a></li>
+			{% if session.logged_in %}
+			<li><a href="profile">Profile</a></li>
+			<li><a href="rankings">Rankings</a></li>
+			<li><a href="{{ url_for('logout') }}">Logout</a></li>	
+			{% endif %}
+			<li><a href="contact">Contact Us</a></li>
+			{% if not session.logged_in %}
+			<li><a href="login">Login</a></li>	
+			{% endif %}
+		</ul>
+	</div>
+	</div>
+	</div>
+	<script type="text/javascript">
+var __lc = {};
+__lc.license = 3329052;
+
+(function() {
+	var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+	lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+})();
+</script>
+	</div> 
+<div class="well"></div>
+{% for message in get_flashed_messages() %}
+<div class=flash>{{ message }}</div>
+{% endfor %}
+
+{% block body %}  {% endblock %}

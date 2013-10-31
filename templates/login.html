@@ -1,0 +1,68 @@
+{% extends "header.html" %}
+{% block body %}
+<div class="container">
+
+
+<div class="row">
+<div class="span12">
+	<div class="well well-small">
+		<center><h2>You need to login to view this content</h2></center>
+		{% if error %}<p class='error' ><strong><font color="red">Error:</font></strong> {{ error }}{% endif %}
+
+	</div>
+	</div>
+	<div class="span6 ">
+	<div class="well well-small">
+		<h3>Login</h3>	
+		<form action="{{ url_for('login') }}" method="post">
+		<input type=text name="user"placeholder="Username" ><br>
+		<input type="hidden" name="user_check" value='login'><br>
+		<input type="password" name="pass" placeholder="Password"><br>
+		<input type=reset value="Clear" class="btn btn-success">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type=submit value="Login" class="btn btn-success"><hr>
+		</form>
+		
+			</div>
+	</div>
+	<div class="span6">
+	<div class="well well-small">
+		<h3> Sign Up</h3>	
+		<form action="{{ url_for('signup') }}" method="post">
+		<input type=text name="usern"placeholder="Username" ><br>
+		<input type=text name="email"placeholder="Email" ><br>
+		<input type="password" name="passwd" placeholder="Password"><br>
+		<input type=password name="passAgain"placeholder="Password again" ><br>
+		<p > By Signing up you agree to the terms and Conditions stated in this product</p>
+		<input type="reset" value="Clear" class="btn btn-success">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="submit" value="Login" class="btn btn-success"><br> <hr>
+		</form>
+	</div>
+	</div>
+	
+	
+</div>
+
+
+<hr class="soften"/>
+<footer class="footer">
+<p>
+	<span class="pull-right">
+	<a href="facebook.com/pyconadmins"><img src="{{ url_for('static', filename='img/facebook.png') }}" alt="" ></a> 
+	<a href="#"><img src="{{ url_for('static', filename='img/googleplus.png') }}" alt="" ></a> 
+	<a href="#"><img src="{{ url_for('static', filename='img/twitter.png') }}" alt="" ></a> 
+	<a href="#"><img src="{{ url_for('static', filename='img/rss.png') }}" alt="" ></a> 
+	</span>
+<a href="index.html">Home</a> - 
+<a href="about">Who we are?</a> - 
+<a href="webdevelopment.html">What we do?</a> - 
+<a href="portfolio.html">What we did?</a> -
+<a href="contact.html">Support</a>
+</p>
+<hr class="soften"/>
+<p>&copy; Copyright &copy picon <br/><br/></p>
+ </footer>
+</div>
+</div>
+{% endblock %}
